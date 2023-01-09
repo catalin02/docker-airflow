@@ -24,6 +24,8 @@ export \
   AIRFLOW__CORE__LOAD_EXAMPLES \
 
 # Install custom python package if requirements.txt is present
+echo "print current working folder..."
+pwd
 if [ -e "/requirements.txt" ]; then
     $(command -v pip) install --user -r /requirements.txt
 fi
